@@ -2,12 +2,13 @@
   "name": "bfhl-api",
   "version": "1.0.0",
   "description": "BFHL Full Stack API",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node api/index.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "body-parser": "^1.20.2"
+    "body-parser": "^1.20.2",
+    "serverless-http": "^3.2.0"
   }
 }
