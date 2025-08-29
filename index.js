@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const serverless = require("serverless-http");
 
 const app = express();
 app.use(bodyParser.json());
@@ -46,5 +47,5 @@ app.post("/bfhl", (req, res) => {
   });
 });
 
-// Export app as Vercel serverless function
-module.exports = app;
+// 👇 Important: export as serverless function for Vercel
+module.exports = serverless(app);
